@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  background-color: #000; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 2em;
+  color: #333333; 
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
+  font-family: "Verdana", serif
+  color: #333333;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #555;
+}
